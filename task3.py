@@ -1,10 +1,7 @@
-# Задача 3. Существует ли треугольник и какого он вида.
-
 a = float(input())
 b = float(input())
 c = float(input())
 
-# Сумма любых двух сторон должна быть больше третьей
 if a + b > c and a + c > b and b + c > a:
     print("Да")
     if a == b and b == c:
