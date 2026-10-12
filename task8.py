@@ -1,10 +1,7 @@
-# Задача 8*. Часовая стрелка -> часы и минуты.
-# За 1 час стрелка поворачивается на 30 градусов, значит 1 градус = 2 минуты.
-
 y = int(input())
 
-total_minutes = y * 2          # всего минут с начала суток
-hours = total_minutes // 60    # полные часы
-minutes = total_minutes % 60   # оставшиеся минуты
+allminutes = y * 2          
+hours = allminutes // 60    
+minutes = allminutes % 60   
 
 print(hours, minutes)

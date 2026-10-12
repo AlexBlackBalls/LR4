@@ -1,19 +1,19 @@
-a = int(input())
-b = int(input())
-c = int(input())
+a = float(input())
+b = float(input())
+c = float(input())
 
 if a >= b and a >= c:
-    maximum = a
+    max = a
 elif b >= a and b >= c:
-    maximum = b
+    max = b
 else:
-    maximum = c
+    max = c
 
 if a <= b and a <= c:
-    minimum = a
+    min = a
 elif b <= a and b <= c:
-    minimum = b
+    min = b
 else:
-    minimum = c
+    min = c
 
-print(maximum, minimum)
+print(max, min)

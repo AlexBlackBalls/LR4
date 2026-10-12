@@ -1,21 +1,16 @@
-# Задача 5. Сколько дней осталось до Нового года (год не високосный).
-
 m = int(input())
 d = int(input())
 
-# Сколько дней в месяце m
 if m == 2:
-    days_in_month = 28
+    dim = 28
 elif m == 4 or m == 6 or m == 9 or m == 11:
-    days_in_month = 30
+    dim = 30
 else:
-    days_in_month = 31
+    dim = 31
 
-# Проверка корректности ввода
-if m < 1 or m > 12 or d < 1 or d > days_in_month:
+if m < 1 or m > 12 or d < 1 or d > dim:
     print(-1)
 else:
-    # Сколько дней прошло в предыдущих месяцах
     if m == 1:
         before = 0
     elif m == 2:
@@ -40,5 +35,5 @@ else:
         before = 304
     else:
         before = 334
-    day_of_year = before + d
-    print(365 - day_of_year)
+    day = before + d
+    print(365 - day)
